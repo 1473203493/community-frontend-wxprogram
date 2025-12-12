@@ -12,12 +12,20 @@
 
     <!-- 轮播图 -->
     <view class="banner-container">
-      <uni-swiper v-if="bannerList.length > 0" :indicator-dots="true" :autoplay="true" :interval="3000" :duration="500">
+      <uni-swiper
+        :indicator-dots="true"
+        :autoplay="true"
+        :interval="3000"
+        :duration="500"
+        :circular="true"
+        indicator-color="rgba(255, 255, 255, 0.3)"
+        indicator-active-color="#fff"
+        style="height: 300rpx;"
+      >
         <uni-swiper-item v-for="(item, index) in bannerList" :key="index">
-          <lazy-image :src="item.image" mode="aspectFill" class="banner-image"></lazy-image>
+          <image :src="item.image" mode="aspectFill" class="banner-image"></image>
         </uni-swiper-item>
       </uni-swiper>
-      <skeleton v-else :is-loading="true" :show-rect="true" :rect-style="{ height: '300rpx', width: '100%' }"></skeleton>
     </view>
 
     <!-- 热门社团 -->
@@ -50,7 +58,7 @@
       </view>
       <view v-if="latestActivities.length > 0" class="activity-list">
         <view class="activity-item" v-for="activity in latestActivities" :key="activity.id" @tap="goToActivityDetail(activity.id)">
-          <lazy-image :src="activity.cover || '/static/student/default-activity.png'" mode="aspectFill" class="activity-cover"></lazy-image>
+          <lazy-image :src="activity.cover || '/static/student/default-club.png'" mode="aspectFill" class="activity-cover"></lazy-image>
           <view class="activity-info">
             <text class="activity-title">{{ activity.title }}</text>
             <view class="activity-meta">
@@ -70,6 +78,8 @@
 
 <script>
 import { homeApi } from '../../api/student/home.js';
+import { activityApi } from '../../api/student/activity.js';
+import { clubApi } from '../../api/student/club.js';
 import lazyImage from '../../components/lazy-image/lazy-image.vue';
 import studentTabbar from '../../components/student-tabbar/student-tabbar.vue';
 import skeleton from '../../components/skeleton/skeleton.vue';
@@ -82,7 +92,12 @@ export default {
   },
   data() {
     return {
-      bannerList: [],
+      // 设置默认轮播图数据，使用static/student文件夹里的图片
+      bannerList: [
+        { image: '/static/student/118675776_p0.jpg' },
+        { image: '/static/student/118675776_p0(1).png' },
+        { image: '/static/student/logo.png' }
+      ],
       popularClubs: [],
       latestActivities: [],
       loading: false
@@ -98,20 +113,61 @@ export default {
       this.loading = true;
       // 不显示加载动画，避免影响用户体验
       try {
-        const res = await homeApi.getHomeInfo();
-        if (res.code === 200) {
-          this.bannerList = res.data.banners || [];
-          this.popularClubs = res.data.popularClubs || [];
-          this.latestActivities = res.data.latestActivities || [];
+        const homeRes = await homeApi.getHomeInfo();
+        console.log('首页API响应:', homeRes);
+        if (homeRes.code === 200) {
+          // 处理后端返回的数据结构
+        // 检查是否有轮播图数据，如果没有则使用默认图片
+        if (homeRes.data && homeRes.data.banners && homeRes.data.banners.length > 0) {
+          this.bannerList = homeRes.data.banners;
+        } else {
+          console.log('首页API未返回轮播图数据，使用默认图片');
+          // 使用static/student文件夹里的图片作为默认轮播图
+          this.bannerList = [
+            { image: '/static/student/118675776_p0.jpg' },
+            { image: '/static/student/118675776_p0(1).png' },
+            { image: '/static/student/logo.png' }
+          ];
+        }
+        } else {
+          console.error('首页API请求失败:', homeRes);
+          // 请求失败时也使用默认图片
+          this.bannerList = [
+            { image: '/static/student/logo.png' }
+          ];
         }
       } catch (error) {
         console.error('加载首页信息失败:', error);
-        // 使用toast提示，但不阻塞用户操作
-        uni.showToast({ 
-          title: '加载失败，点击重试', 
-          icon: 'none',
-          duration: 3000
-        });
+        // 捕获到错误时使用默认图片
+        this.bannerList = [
+          { image: '/static/student/logo.png' }
+        ];
+      }
+
+      // 使用社团列表API获取热门社团，替代首页API中的社团数据
+      try {
+        const clubRes = await clubApi.getClubList({ sort: 'hot', page: 1, limit: 5 });
+        console.log('热门社团API响应:', clubRes);
+        if (clubRes.code === 200) {
+          this.popularClubs = clubRes.data.list || [];
+        } else {
+          console.error('热门社团API请求失败:', clubRes);
+        }
+      } catch (error) {
+        console.error('加载热门社团失败:', error);
+      }
+
+      // 使用活动列表API获取最新活动，替代首页API中的活动数据
+      try {
+        const activityRes = await activityApi.getActivityList({ page: 1, size: 3 });
+        console.log('活动列表API响应:', activityRes);
+        if (activityRes.code === 200) {
+          this.latestActivities = activityRes.data.list || [];
+        } else {
+          console.error('活动列表API请求失败:', activityRes);
+        }
+      } catch (error) {
+        console.error('加载最新活动失败:', error);
       } finally {
         this.loading = false;
       }
@@ -137,14 +193,14 @@ export default {
 
     // 跳转到个人中心
     goToPersonal() {
-      uni.navigateTo({
+      uni.switchTab({
         url: '/pages/student/personal/index'
       });
     },
 
     // 跳转到社团列表
     goToClubList() {
-      uni.navigateTo({
+      uni.switchTab({
         url: '/pages/student/club/list'
       });
     },
@@ -158,7 +214,7 @@ export default {
 
     // 跳转到活动列表
     goToActivityList() {
-      uni.navigateTo({
+      uni.switchTab({
         url: '/pages/student/activity/list'
       });
     },
@@ -224,15 +280,17 @@ export default {
 
 /* 轮播图 */
 .banner-container {
-  margin-top: 100rpx;
-  height: 300rpx;
-  overflow: hidden;
-}
+    width: 100%;
+    margin-top: 100rpx;
+    margin-bottom: 20rpx;
+    height: 300rpx;
+    overflow: hidden;
+  }
 
-.banner-image {
-  width: 100%;
-  height: 100%;
-}
+  .banner-image {
+    width: 100%;
+    height: 300rpx;
+  }
 
 /* 通用区块样式 */
 .section {

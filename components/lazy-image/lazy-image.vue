@@ -2,7 +2,7 @@
   <view class="lazy-image-container">
     <image 
       v-if="show" 
-      :src="src" 
+      :src="currentSrc" 
       :mode="mode" 
       :style="imageStyle"
       class="lazy-image"
@@ -11,7 +11,7 @@
     ></image>
     <image 
       v-else 
-      src="/static/student/placeholder.png" 
+      src="/static/student/default-club.png" 
       :mode="mode" 
       :style="imageStyle"
       class="lazy-image"
@@ -47,6 +47,7 @@ export default {
   data() {
     return {
       show: false,
+      currentSrc: null,
       observer: null,
       timeout: null
     };
@@ -60,12 +61,19 @@ export default {
     }
   },
   mounted() {
+    this.currentSrc = this.src;
     if (this.delay > 0) {
       this.timeout = setTimeout(() => {
         this.initObserver();
       }, this.delay);
     } else {
       this.initObserver();
+    }
+  },
+  watch: {
+    src(newVal) {
+      this.currentSrc = newVal;
+      this.show = true;
     }
   },
   beforeUnmount() {
@@ -107,6 +115,8 @@ export default {
 
     // 图片加载失败
     onError(e) {
+      // 图片加载失败时显示占位符
+      this.currentSrc = '/static/student/default-club.png';
       this.$emit('error', e);
     }
   }

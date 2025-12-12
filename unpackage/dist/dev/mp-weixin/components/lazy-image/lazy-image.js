@@ -28,6 +28,7 @@ const _sfc_main = {
   data() {
     return {
       show: false,
+      currentSrc: null,
       observer: null,
       timeout: null
     };
@@ -41,12 +42,19 @@ const _sfc_main = {
     }
   },
   mounted() {
+    this.currentSrc = this.src;
     if (this.delay > 0) {
       this.timeout = setTimeout(() => {
         this.initObserver();
       }, this.delay);
     } else {
       this.initObserver();
+    }
+  },
+  watch: {
+    src(newVal) {
+      this.currentSrc = newVal;
+      this.show = true;
     }
   },
   beforeUnmount() {
@@ -82,6 +90,7 @@ const _sfc_main = {
     },
     // 图片加载失败
     onError(e) {
+      this.currentSrc = "/static/student/default-club.png";
       this.$emit("error", e);
     }
   }
@@ -90,7 +99,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return common_vendor.e({
     a: $data.show
   }, $data.show ? {
-    b: $props.src,
+    b: $data.currentSrc,
     c: $props.mode,
     d: common_vendor.s($options.imageStyle),
     e: common_vendor.o((...args) => $options.onLoad && $options.onLoad(...args)),
