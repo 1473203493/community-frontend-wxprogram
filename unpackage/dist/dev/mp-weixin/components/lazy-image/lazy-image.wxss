@@ -1,0 +1,9 @@
+
+.lazy-image-container.data-v-ba80243c {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.lazy-image-container .lazy-image.data-v-ba80243c {
+  transition: opacity 0.3s ease;
+}

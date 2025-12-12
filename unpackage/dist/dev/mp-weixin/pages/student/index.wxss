@@ -1,0 +1,172 @@
+
+.student-home-container.data-v-c78e6e6b {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding-bottom: 100rpx; /* 为底部导航栏留出空间 */
+}
+
+/* 顶部搜索栏 */
+.top-search-bar.data-v-c78e6e6b {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #fff;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.logo.data-v-c78e6e6b {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+.search-box.data-v-c78e6e6b {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 15rpx 20rpx;
+  background-color: #f5f5f5;
+  border-radius: 30rpx;
+  /* 优化点击区域 */
+  min-height: 60rpx;
+}
+.search-placeholder.data-v-c78e6e6b {
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+/* 轮播图 */
+.banner-container.data-v-c78e6e6b {
+  margin-top: 100rpx;
+  height: 300rpx;
+  overflow: hidden;
+}
+.banner-image.data-v-c78e6e6b {
+  width: 100%;
+  height: 100%;
+}
+
+/* 通用区块样式 */
+.section.data-v-c78e6e6b {
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+}
+.section-header.data-v-c78e6e6b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+}
+.section-title.data-v-c78e6e6b {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+}
+.more-btn.data-v-c78e6e6b {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 社团列表 */
+.club-list.data-v-c78e6e6b {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 20rpx;
+  /* 优化滚动体验 */
+  -webkit-overflow-scrolling: touch;
+}
+.club-item.data-v-c78e6e6b {
+  width: 220rpx;
+  margin-right: 20rpx;
+  /* 增加点击区域 */
+  padding: 5rpx;
+  border-radius: 10rpx;
+}
+.club-item.data-v-c78e6e6b:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.club-logo.data-v-c78e6e6b {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 10rpx;
+  margin-bottom: 10rpx;
+}
+.club-name.data-v-c78e6e6b {
+  display: block;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.club-desc.data-v-c78e6e6b {
+  display: block;
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 5rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 50rpx;
+  line-height: 25rpx;
+}
+.club-stats.data-v-c78e6e6b {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+
+/* 活动列表 */
+.activity-list.data-v-c78e6e6b {
+  display: flex;
+  flex-direction: column;
+}
+.activity-item.data-v-c78e6e6b {
+  display: flex;
+  margin-bottom: 20rpx;
+  /* 增加点击区域 */
+  padding: 5rpx;
+  border-radius: 10rpx;
+}
+.activity-item.data-v-c78e6e6b:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.activity-cover.data-v-c78e6e6b {
+  width: 180rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.activity-info.data-v-c78e6e6b {
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.activity-title.data-v-c78e6e6b {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 40rpx;
+}
+.activity-meta.data-v-c78e6e6b {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #999;
+}

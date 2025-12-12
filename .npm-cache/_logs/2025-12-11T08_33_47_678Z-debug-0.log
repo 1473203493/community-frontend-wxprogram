@@ -1,0 +1,295 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.1.0
+2 info using node@v20.9.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Users\Fooler\Desktop\MultiCommunityApplication\sss\community-frontend-wxprogram\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:C:\Users\Fooler\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Program Files\nodejs\node_global\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 9ms
+17 timing npm:load:configload Completed in 9ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install
+22 verbose argv "install" "--cache" "./.npm-cache"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:C:\Users\Fooler\Desktop\MultiCommunityApplication\sss\community-frontend-wxprogram\.npm-cache\_logs\2025-12-11T08_33_47_678Z-
+26 verbose logfile C:\Users\Fooler\Desktop\MultiCommunityApplication\sss\community-frontend-wxprogram\.npm-cache\_logs\2025-12-11T08_33_47_678Z-debug-0.log
+27 timing npm:load:logFile Completed in 8ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 74ms
+31 timing arborist:ctor Completed in 1ms
+32 timing idealTree:init Completed in 6ms
+33 timing idealTree:userRequests Completed in 0ms
+34 silly idealTree buildDeps
+35 silly fetch manifest vue@^3.3.4
+36 silly logfile done cleaning log files
+37 http fetch GET 200 https://registry.npmmirror.com/vue 16ms (cache hit)
+38 silly fetch manifest typescript@*
+39 http fetch GET 200 https://registry.npmmirror.com/typescript 14ms (cache hit)
+40 silly fetch manifest @dcloudio/uni-app@^3.0.0
+41 http fetch GET 200 https://registry.npmmirror.com/@dcloudio%2funi-app 18ms (cache hit)
+42 silly fetch manifest @dcloudio/uni-cli-plugin-vite@^3.0.0
+43 notice Access token expired or revoked. Please try logging in again.
+44 http fetch GET 404 https://registry.npmjs.org/@dcloudio%2funi-cli-plugin-vite 2049ms (cache skip)
+45 notice Access token expired or revoked. Please try logging in again.
+46 http fetch GET 404 https://registry.npmjs.org/@dcloudio%2funi-cli-plugin-vite 753ms (cache skip)
+47 silly fetch manifest @dcloudio/vite-plugin-uni@^3.0.0
+48 http fetch GET 200 https://registry.npmmirror.com/@dcloudio%2fvite-plugin-uni 310ms (cache miss)
+49 silly fetch manifest vite@^4.4.0
+50 http fetch GET 200 https://registry.npmmirror.com/vite 104ms (cache miss)
+51 silly fetch manifest @types/node@>= 14
+52 http fetch GET 200 https://registry.npmmirror.com/@types%2fnode 247ms (cache miss)
+53 silly fetch manifest less@*
+54 http fetch GET 200 https://registry.npmmirror.com/less 65ms (cache miss)
+55 silly fetch manifest lightningcss@^1.21.0
+56 http fetch GET 200 https://registry.npmmirror.com/lightningcss 61ms (cache miss)
+57 silly fetch manifest sass@*
+58 http fetch GET 200 https://registry.npmmirror.com/sass 85ms (cache miss)
+59 silly fetch manifest stylus@*
+60 http fetch GET 200 https://registry.npmmirror.com/stylus 62ms (cache miss)
+61 silly fetch manifest sugarss@*
+62 http fetch GET 200 https://registry.npmmirror.com/sugarss 56ms (cache miss)
+63 silly fetch manifest postcss@^8.3.3
+64 http fetch GET 200 https://registry.npmmirror.com/postcss 4ms (cache hit)
+65 silly fetch manifest terser@^5.4.0
+66 http fetch GET 200 https://registry.npmmirror.com/terser 58ms (cache miss)
+67 silly placeDep ROOT @dcloudio/uni-app@ OK for: community-frontend-wxprogram@1.0.0 want: ^3.0.0
+68 silly placeDep ROOT @dcloudio/uni-cli-plugin-vite@ OK for: community-frontend-wxprogram@1.0.0 want: ^3.0.0
+69 silly placeDep ROOT @dcloudio/vite-plugin-uni@ OK for: community-frontend-wxprogram@1.0.0 want: ^3.0.0
+70 silly placeDep ROOT vite@4.5.14 OK for: community-frontend-wxprogram@1.0.0 want: ^4.4.0
+71 silly fetch manifest esbuild@^0.18.10
+72 silly fetch manifest postcss@^8.4.27
+73 silly fetch manifest rollup@^3.27.1
+74 silly fetch manifest fsevents@~2.3.2
+75 silly placeDep ROOT vue@3.5.25 OK for: community-frontend-wxprogram@1.0.0 want: ^3.3.4
+76 silly fetch manifest @vue/shared@3.5.25
+77 silly fetch manifest @vue/compiler-dom@3.5.25
+78 silly fetch manifest @vue/runtime-dom@3.5.25
+79 silly fetch manifest @vue/compiler-sfc@3.5.25
+80 silly fetch manifest @vue/server-renderer@3.5.25
+81 http fetch GET 200 https://registry.npmmirror.com/@vue%2fshared 13ms (cache hit)
+82 http fetch GET 200 https://registry.npmmirror.com/@vue%2fserver-renderer 14ms (cache hit)
+83 http fetch GET 200 https://registry.npmmirror.com/@vue%2fcompiler-dom 15ms (cache hit)
+84 http fetch GET 200 https://registry.npmmirror.com/@vue%2fruntime-dom 17ms (cache hit)
+85 http fetch GET 200 https://registry.npmmirror.com/@vue%2fcompiler-sfc 19ms (cache hit)
+86 http fetch GET 200 https://registry.npmmirror.com/fsevents 89ms (cache miss)
+87 http fetch GET 200 https://registry.npmmirror.com/esbuild 98ms (cache miss)
+88 http fetch GET 200 https://registry.npmmirror.com/rollup 247ms (cache miss)
+89 timing idealTree:#root Completed in 4295ms
+90 timing idealTree:node_modules/@dcloudio/uni-app Completed in 0ms
+91 timing idealTree:node_modules/@dcloudio/uni-cli-plugin-vite Completed in 0ms
+92 timing idealTree:node_modules/@dcloudio/vite-plugin-uni Completed in 0ms
+93 silly placeDep ROOT esbuild@0.18.20 OK for: vite@4.5.14 want: ^0.18.10
+94 silly fetch manifest @esbuild/android-arm@0.18.20
+95 silly fetch manifest @esbuild/android-arm64@0.18.20
+96 silly fetch manifest @esbuild/android-x64@0.18.20
+97 silly fetch manifest @esbuild/darwin-arm64@0.18.20
+98 silly fetch manifest @esbuild/darwin-x64@0.18.20
+99 silly fetch manifest @esbuild/freebsd-arm64@0.18.20
+100 silly fetch manifest @esbuild/freebsd-x64@0.18.20
+101 silly fetch manifest @esbuild/linux-arm@0.18.20
+102 silly fetch manifest @esbuild/linux-arm64@0.18.20
+103 silly fetch manifest @esbuild/linux-ia32@0.18.20
+104 silly fetch manifest @esbuild/linux-loong64@0.18.20
+105 silly fetch manifest @esbuild/linux-mips64el@0.18.20
+106 silly fetch manifest @esbuild/linux-ppc64@0.18.20
+107 silly fetch manifest @esbuild/linux-riscv64@0.18.20
+108 silly fetch manifest @esbuild/linux-s390x@0.18.20
+109 silly fetch manifest @esbuild/linux-x64@0.18.20
+110 silly fetch manifest @esbuild/netbsd-x64@0.18.20
+111 silly fetch manifest @esbuild/openbsd-x64@0.18.20
+112 silly fetch manifest @esbuild/sunos-x64@0.18.20
+113 silly fetch manifest @esbuild/win32-arm64@0.18.20
+114 silly fetch manifest @esbuild/win32-ia32@0.18.20
+115 silly fetch manifest @esbuild/win32-x64@0.18.20
+116 silly placeDep ROOT fsevents@2.3.3 OK for: vite@4.5.14 want: ~2.3.2
+117 silly placeDep ROOT postcss@8.5.6 OK for: vite@4.5.14 want: ^8.4.27
+118 silly fetch manifest nanoid@^3.3.11
+119 silly fetch manifest picocolors@^1.1.1
+120 silly fetch manifest source-map-js@^1.2.1
+121 silly placeDep ROOT rollup@3.29.5 OK for: vite@4.5.14 want: ^3.27.1
+122 http fetch GET 200 https://registry.npmmirror.com/source-map-js 42ms (cache hit)
+123 http fetch GET 200 https://registry.npmmirror.com/nanoid 44ms (cache hit)
+124 http fetch GET 200 https://registry.npmmirror.com/picocolors 45ms (cache hit)
+125 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fandroid-x64 103ms (cache miss)
+126 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fandroid-arm64 105ms (cache miss)
+127 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fandroid-arm 129ms (cache miss)
+128 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-ia32 208ms (cache miss)
+129 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fdarwin-arm64 213ms (cache miss)
+130 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fdarwin-x64 242ms (cache miss)
+131 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2ffreebsd-x64 242ms (cache miss)
+132 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-arm 242ms (cache miss)
+133 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2ffreebsd-arm64 245ms (cache miss)
+134 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fnetbsd-x64 238ms (cache miss)
+135 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fsunos-x64 281ms (cache miss)
+136 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-riscv64 284ms (cache miss)
+137 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fwin32-arm64 284ms (cache miss)
+138 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fwin32-ia32 285ms (cache miss)
+139 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fopenbsd-x64 291ms (cache miss)
+140 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-s390x 294ms (cache miss)
+141 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-mips64el 301ms (cache miss)
+142 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-arm64 308ms (cache miss)
+143 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-x64 305ms (cache miss)
+144 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-ppc64 312ms (cache miss)
+145 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2fwin32-x64 315ms (cache miss)
+146 http fetch GET 200 https://registry.npmmirror.com/@esbuild%2flinux-loong64 324ms (cache miss)
+147 timing idealTree:node_modules/vite Completed in 342ms
+148 silly placeDep ROOT @esbuild/android-arm@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+149 silly placeDep ROOT @esbuild/android-arm64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+150 silly placeDep ROOT @esbuild/android-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+151 silly placeDep ROOT @esbuild/darwin-arm64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+152 silly placeDep ROOT @esbuild/darwin-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+153 silly placeDep ROOT @esbuild/freebsd-arm64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+154 silly placeDep ROOT @esbuild/freebsd-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+155 silly placeDep ROOT @esbuild/linux-arm@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+156 silly placeDep ROOT @esbuild/linux-arm64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+157 silly placeDep ROOT @esbuild/linux-ia32@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+158 silly placeDep ROOT @esbuild/linux-loong64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+159 silly placeDep ROOT @esbuild/linux-mips64el@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+160 silly placeDep ROOT @esbuild/linux-ppc64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+161 silly placeDep ROOT @esbuild/linux-riscv64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+162 silly placeDep ROOT @esbuild/linux-s390x@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+163 silly placeDep ROOT @esbuild/linux-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+164 silly placeDep ROOT @esbuild/netbsd-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+165 silly placeDep ROOT @esbuild/openbsd-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+166 silly placeDep ROOT @esbuild/sunos-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+167 silly placeDep ROOT @esbuild/win32-arm64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+168 silly placeDep ROOT @esbuild/win32-ia32@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+169 silly placeDep ROOT @esbuild/win32-x64@0.18.20 OK for: esbuild@0.18.20 want: 0.18.20
+170 timing idealTree:node_modules/esbuild Completed in 18ms
+171 timing idealTree:node_modules/@esbuild/android-arm Completed in 0ms
+172 timing idealTree:node_modules/@esbuild/android-arm64 Completed in 0ms
+173 timing idealTree:node_modules/@esbuild/android-x64 Completed in 0ms
+174 timing idealTree:node_modules/@esbuild/darwin-arm64 Completed in 0ms
+175 timing idealTree:node_modules/@esbuild/darwin-x64 Completed in 0ms
+176 timing idealTree:node_modules/@esbuild/freebsd-arm64 Completed in 0ms
+177 timing idealTree:node_modules/@esbuild/freebsd-x64 Completed in 0ms
+178 timing idealTree:node_modules/@esbuild/linux-arm Completed in 1ms
+179 timing idealTree:node_modules/@esbuild/linux-arm64 Completed in 0ms
+180 timing idealTree:node_modules/@esbuild/linux-ia32 Completed in 0ms
+181 timing idealTree:node_modules/@esbuild/linux-loong64 Completed in 0ms
+182 timing idealTree:node_modules/@esbuild/linux-mips64el Completed in 0ms
+183 timing idealTree:node_modules/@esbuild/linux-ppc64 Completed in 0ms
+184 timing idealTree:node_modules/@esbuild/linux-riscv64 Completed in 0ms
+185 timing idealTree:node_modules/@esbuild/linux-s390x Completed in 0ms
+186 timing idealTree:node_modules/@esbuild/linux-x64 Completed in 0ms
+187 timing idealTree:node_modules/@esbuild/netbsd-x64 Completed in 0ms
+188 timing idealTree:node_modules/@esbuild/openbsd-x64 Completed in 0ms
+189 timing idealTree:node_modules/@esbuild/sunos-x64 Completed in 0ms
+190 timing idealTree:node_modules/@esbuild/win32-arm64 Completed in 0ms
+191 timing idealTree:node_modules/@esbuild/win32-ia32 Completed in 0ms
+192 timing idealTree:node_modules/@esbuild/win32-x64 Completed in 0ms
+193 timing idealTree:node_modules/fsevents Completed in 0ms
+194 silly placeDep ROOT nanoid@3.3.11 OK for: postcss@8.5.6 want: ^3.3.11
+195 silly placeDep ROOT picocolors@1.1.1 OK for: postcss@8.5.6 want: ^1.1.1
+196 silly placeDep ROOT source-map-js@1.2.1 OK for: postcss@8.5.6 want: ^1.2.1
+197 timing idealTree:node_modules/postcss Completed in 3ms
+198 timing idealTree:node_modules/nanoid Completed in 0ms
+199 timing idealTree:node_modules/picocolors Completed in 0ms
+200 timing idealTree:node_modules/rollup Completed in 0ms
+201 timing idealTree:node_modules/source-map-js Completed in 0ms
+202 silly fetch manifest vue@3.5.25
+203 silly placeDep ROOT @vue/compiler-dom@3.5.25 OK for: vue@3.5.25 want: 3.5.25
+204 silly fetch manifest @vue/compiler-core@3.5.25
+205 silly placeDep ROOT @vue/compiler-sfc@3.5.25 OK for: vue@3.5.25 want: 3.5.25
+206 silly fetch manifest @babel/parser@^7.28.5
+207 silly fetch manifest estree-walker@^2.0.2
+208 silly fetch manifest magic-string@^0.30.21
+209 silly fetch manifest @vue/compiler-ssr@3.5.25
+210 silly placeDep ROOT @vue/runtime-dom@3.5.25 OK for: vue@3.5.25 want: 3.5.25
+211 silly fetch manifest csstype@^3.1.3
+212 silly fetch manifest @vue/reactivity@3.5.25
+213 silly fetch manifest @vue/runtime-core@3.5.25
+214 silly placeDep ROOT @vue/server-renderer@3.5.25 OK for: vue@3.5.25 want: 3.5.25
+215 silly placeDep ROOT @vue/shared@3.5.25 OK for: vue@3.5.25 want: 3.5.25
+216 http fetch GET 200 https://registry.npmmirror.com/magic-string 17ms (cache hit)
+217 http fetch GET 200 https://registry.npmmirror.com/estree-walker 19ms (cache hit)
+218 http fetch GET 200 https://registry.npmmirror.com/@vue%2freactivity 17ms (cache hit)
+219 http fetch GET 200 https://registry.npmmirror.com/csstype 21ms (cache hit)
+220 http fetch GET 200 https://registry.npmmirror.com/@vue%2fruntime-core 21ms (cache hit)
+221 http fetch GET 200 https://registry.npmmirror.com/@vue%2fcompiler-core 27ms (cache hit)
+222 http fetch GET 200 https://registry.npmmirror.com/@babel%2fparser 27ms (cache hit)
+223 http fetch GET 200 https://registry.npmmirror.com/@vue%2fcompiler-ssr 29ms (cache hit)
+224 timing idealTree:node_modules/vue Completed in 35ms
+225 silly placeDep ROOT @vue/compiler-core@3.5.25 OK for: @vue/compiler-dom@3.5.25 want: 3.5.25
+226 silly fetch manifest entities@^4.5.0
+227 http fetch GET 200 https://registry.npmmirror.com/entities 8ms (cache hit)
+228 timing idealTree:node_modules/@vue/compiler-dom Completed in 12ms
+229 silly placeDep ROOT @babel/parser@7.28.5 OK for: @vue/compiler-core@3.5.25 want: ^7.28.5
+230 silly fetch manifest @babel/types@^7.28.5
+231 silly placeDep ROOT entities@4.5.0 OK for: @vue/compiler-core@3.5.25 want: ^4.5.0
+232 silly placeDep ROOT estree-walker@2.0.2 OK for: @vue/compiler-core@3.5.25 want: ^2.0.2
+233 http fetch GET 200 https://registry.npmmirror.com/@babel%2ftypes 6ms (cache hit)
+234 timing idealTree:node_modules/@vue/compiler-core Completed in 9ms
+235 silly placeDep ROOT @babel/types@7.28.5 OK for: @babel/parser@7.28.5 want: ^7.28.5
+236 silly fetch manifest @babel/helper-string-parser@^7.27.1
+237 silly fetch manifest @babel/helper-validator-identifier@^7.28.5
+238 http fetch GET 200 https://registry.npmmirror.com/@babel%2fhelper-string-parser 5ms (cache hit)
+239 http fetch GET 200 https://registry.npmmirror.com/@babel%2fhelper-validator-identifier 5ms (cache hit)
+240 timing idealTree:node_modules/@babel/parser Completed in 7ms
+241 silly placeDep ROOT @babel/helper-string-parser@7.27.1 OK for: @babel/types@7.28.5 want: ^7.27.1
+242 silly placeDep ROOT @babel/helper-validator-identifier@7.28.5 OK for: @babel/types@7.28.5 want: ^7.28.5
+243 timing idealTree:node_modules/@babel/types Completed in 2ms
+244 timing idealTree:node_modules/@babel/helper-string-parser Completed in 0ms
+245 timing idealTree:node_modules/@babel/helper-validator-identifier Completed in 0ms
+246 silly placeDep ROOT @vue/compiler-ssr@3.5.25 OK for: @vue/compiler-sfc@3.5.25 want: 3.5.25
+247 silly placeDep ROOT magic-string@0.30.21 OK for: @vue/compiler-sfc@3.5.25 want: ^0.30.21
+248 silly fetch manifest @jridgewell/sourcemap-codec@^1.5.5
+249 http fetch GET 200 https://registry.npmmirror.com/@jridgewell%2fsourcemap-codec 5ms (cache hit)
+250 timing idealTree:node_modules/@vue/compiler-sfc Completed in 7ms
+251 timing idealTree:node_modules/@vue/compiler-ssr Completed in 0ms
+252 silly placeDep ROOT @vue/reactivity@3.5.25 OK for: @vue/runtime-dom@3.5.25 want: 3.5.25
+253 silly placeDep ROOT @vue/runtime-core@3.5.25 OK for: @vue/runtime-dom@3.5.25 want: 3.5.25
+254 silly placeDep ROOT csstype@3.2.3 OK for: @vue/runtime-dom@3.5.25 want: ^3.1.3
+255 timing idealTree:node_modules/@vue/runtime-dom Completed in 2ms
+256 timing idealTree:node_modules/@vue/reactivity Completed in 0ms
+257 timing idealTree:node_modules/@vue/runtime-core Completed in 0ms
+258 timing idealTree:node_modules/@vue/server-renderer Completed in 0ms
+259 timing idealTree:node_modules/@vue/shared Completed in 0ms
+260 timing idealTree:node_modules/csstype Completed in 0ms
+261 timing idealTree:node_modules/entities Completed in 0ms
+262 timing idealTree:node_modules/estree-walker Completed in 0ms
+263 silly placeDep ROOT @jridgewell/sourcemap-codec@1.5.5 OK for: magic-string@0.30.21 want: ^1.5.5
+264 timing idealTree:node_modules/magic-string Completed in 0ms
+265 timing idealTree:node_modules/@jridgewell/sourcemap-codec Completed in 0ms
+266 timing idealTree:buildDeps Completed in 4737ms
+267 timing idealTree:fixDepFlags Completed in 0ms
+268 timing idealTree Completed in 4745ms
+269 timing command:install Completed in 4753ms
+270 verbose type range
+271 verbose stack @dcloudio/uni-app: No matching version found for @dcloudio/uni-app@^3.0.0.
+271 verbose stack     at module.exports (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-pick-manifest\lib\index.js:209:23)
+271 verbose stack     at RegistryFetcher.manifest (C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\registry.js:119:22)
+271 verbose stack     at async #nodeFromEdge (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1049:19)
+271 verbose stack     at async #buildDepStep (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:917:11)
+271 verbose stack     at async Arborist.buildIdealTree (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:196:7)
+271 verbose stack     at async Promise.all (index 1)
+271 verbose stack     at async Arborist.reify (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:159:5)
+271 verbose stack     at async Install.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\install.js:151:5)
+271 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli-entry.js:61:5)
+272 verbose cwd C:\Users\Fooler\Desktop\MultiCommunityApplication\sss\community-frontend-wxprogram
+273 verbose Windows_NT 10.0.22631
+274 verbose node v20.9.0
+275 verbose npm  v10.1.0
+276 error code ETARGET
+277 error notarget No matching version found for @dcloudio/uni-app@^3.0.0.
+278 error notarget In most cases you or one of your dependencies are requesting
+278 error notarget a package version that doesn't exist.
+279 verbose exit 1
+280 timing npm Completed in 5159ms
+281 verbose unfinished npm timer reify 1765442028085
+282 verbose unfinished npm timer reify:loadTrees 1765442028089
+283 verbose code 1
+284 error A complete log of this run can be found in: C:\Users\Fooler\Desktop\MultiCommunityApplication\sss\community-frontend-wxprogram\.npm-cache\_logs\2025-12-11T08_33_47_678Z-debug-0.log

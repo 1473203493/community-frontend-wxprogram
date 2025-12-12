@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/student/index",
+    "pages/student/club/list",
+    "pages/student/club/detail",
+    "pages/student/activity/list",
+    "pages/student/activity/detail",
+    "pages/student/personal/index",
+    "pages/student/personal/about",
+    "pages/student/personal/change-password",
+    "pages/student/personal/edit",
+    "pages/student/personal/messages",
+    "pages/student/personal/my-activities",
+    "pages/student/personal/my-applications",
+    "pages/student/personal/my-clubs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#007aff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/student/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/student/club/list",
+        "text": "社团"
+      },
+      {
+        "pagePath": "pages/student/activity/list",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/student/personal/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

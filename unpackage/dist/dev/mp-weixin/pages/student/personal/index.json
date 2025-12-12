@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "lazy-image": "../../../components/lazy-image/lazy-image",
+    "skeleton": "../../../components/skeleton/skeleton"
+  }
+}

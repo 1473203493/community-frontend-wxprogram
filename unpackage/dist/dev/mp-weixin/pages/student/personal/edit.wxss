@@ -1,0 +1,49 @@
+
+.edit-container.data-v-e634ea07 {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20rpx;
+}
+.form-container.data-v-e634ea07 {
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.form-item.data-v-e634ea07 {
+  margin-bottom: 30rpx;
+}
+.label.data-v-e634ea07 {
+  display: block;
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.input.data-v-e634ea07 {
+  width: 100%;
+  height: 80rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 5rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+.gender-select.data-v-e634ea07 {
+  padding: 20rpx 0;
+}
+.gender-select label.data-v-e634ea07 {
+  margin-right: 40rpx;
+  font-size: 28rpx;
+}
+.submit-btn.data-v-e634ea07 {
+  width: 100%;
+  height: 80rpx;
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  border-radius: 5rpx;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
+.submit-btn.data-v-e634ea07:disabled {
+  background-color: #ccc;
+}

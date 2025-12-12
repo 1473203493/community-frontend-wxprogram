@@ -1,0 +1,144 @@
+
+.club-list-container.data-v-b84f44d4 {
+  padding-bottom: 20rpx;
+}
+
+/* 搜索框 */
+.search-container.data-v-b84f44d4 {
+  padding: 20rpx;
+  background-color: #fff;
+}
+.search-box.data-v-b84f44d4 {
+  display: flex;
+  align-items: center;
+  padding: 12rpx 20rpx;
+  background-color: #f5f5f5;
+  border-radius: 40rpx;
+}
+.search-box input.data-v-b84f44d4 {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+.placeholder.data-v-b84f44d4 {
+  color: #999;
+}
+
+/* 筛选条件 */
+.filter-container.data-v-b84f44d4 {
+  padding: 20rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+.filter-group.data-v-b84f44d4 {
+  margin-bottom: 20rpx;
+}
+.filter-label.data-v-b84f44d4 {
+  font-size: 28rpx;
+  color: #666;
+}
+.filter-options.data-v-b84f44d4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+}
+.filter-option.data-v-b84f44d4 {
+  padding: 8rpx 20rpx;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+  color: #666;
+  background-color: #f5f5f5;
+  border-radius: 20rpx;
+}
+.filter-option.active.data-v-b84f44d4 {
+  color: #fff;
+  background-color: #007aff;
+}
+
+/* 社团列表 */
+.club-list.data-v-b84f44d4 {
+  background-color: #fff;
+}
+.club-item.data-v-b84f44d4 {
+  display: flex;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  /* 增加点击区域 */
+  border: 2rpx solid transparent;
+}
+.club-item.data-v-b84f44d4:active {
+  border-color: #007aff;
+  background-color: rgba(0, 122, 255, 0.05);
+}
+.club-item image.data-v-b84f44d4 {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+}
+.club-info.data-v-b84f44d4 {
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.club-header.data-v-b84f44d4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.club-name.data-v-b84f44d4 {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+.club-category.data-v-b84f44d4 {
+  padding: 4rpx 12rpx;
+  font-size: 22rpx;
+  color: #fff;
+  background-color: #007aff;
+  border-radius: 10rpx;
+}
+.club-description.data-v-b84f44d4 {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #666;
+  line-height: 36rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.club-stats.data-v-b84f44d4 {
+  margin-top: 10rpx;
+  display: flex;
+}
+.stat-item.data-v-b84f44d4 {
+  margin-right: 30rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 空状态 */
+.empty.data-v-b84f44d4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100rpx 0;
+}
+.empty text.data-v-b84f44d4 {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+/* 分页 */
+uni-pagination.data-v-b84f44d4 {
+  margin: 40rpx 0;
+}

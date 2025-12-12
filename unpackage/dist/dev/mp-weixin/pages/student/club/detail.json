@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "社团详情",
+  "usingComponents": {
+    "lazy-image": "../../../components/lazy-image/lazy-image"
+  }
+}

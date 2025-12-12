@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/student/index",
+    "pages/student/club/list",
+    "pages/student/club/detail",
+    "pages/student/activity/list",
+    "pages/student/activity/detail",
+    "pages/student/personal/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,144 @@
+
+.club-detail-container.data-v-ddd713cc {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 社团头部信息 */
+.club-header.data-v-ddd713cc {
+  padding: 20rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.club-header image.data-v-ddd713cc {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+}
+.club-info.data-v-ddd713cc {
+  margin-left: 20rpx;
+  flex: 1;
+}
+.club-name.data-v-ddd713cc {
+  display: block;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+}
+.club-category.data-v-ddd713cc {
+  display: block;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.club-member.data-v-ddd713cc {
+  display: block;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 通用区块样式 */
+.section.data-v-ddd713cc {
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  background-color: #fff;
+}
+.section-title.data-v-ddd713cc {
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1rpx solid #eee;
+}
+.section-content.data-v-ddd713cc {
+  padding: 20rpx 0;
+}
+.section-content text.data-v-ddd713cc {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 40rpx;
+}
+
+/* 负责人信息 */
+.manager-info.data-v-ddd713cc {
+  display: flex;
+  align-items: center;
+}
+.manager-info image.data-v-ddd713cc {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.manager-detail.data-v-ddd713cc {
+  margin-left: 20rpx;
+}
+.manager-name.data-v-ddd713cc {
+  display: block;
+  font-size: 28rpx;
+  color: #333;
+}
+.manager-role.data-v-ddd713cc {
+  display: block;
+  margin-top: 5rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 近期活动 */
+.activity-item.data-v-ddd713cc {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.activity-item.data-v-ddd713cc:last-child {
+  border-bottom: none;
+}
+.activity-title.data-v-ddd713cc {
+  display: block;
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.activity-time.data-v-ddd713cc {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+}
+.empty-activities.data-v-ddd713cc {
+  padding: 40rpx 0;
+  text-align: center;
+}
+.empty-activities text.data-v-ddd713cc {
+  font-size: 26rpx;
+  color: #999;
+}
+
+/* 底部操作栏 */
+.bottom-bar.data-v-ddd713cc {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+  display: flex;
+  justify-content: center;
+}
+.join-btn.data-v-ddd713cc {
+  width: 100%;
+  height: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background-color: #007aff;
+  border-radius: 40rpx;
+}
+.joined-btn.data-v-ddd713cc {
+  width: 100%;
+  height: 80rpx;
+  font-size: 30rpx;
+  color: #999;
+  background-color: #f5f5f5;
+  border-radius: 40rpx;
+}

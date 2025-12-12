@@ -1,0 +1,19 @@
+{
+    "version" : "1.0",
+    "configurations" : [
+        {
+            "playground" : "standard",
+            "type" : "uni-app:app-android"
+        },
+        {
+            "type" : "uni-app:app-plus",
+            "platform" : "mp-weixin",
+            "name" : "微信小程序",
+            "miniprogram" : {
+                "devToolsPath" : "D:\\微信web开发者工具",
+                "appid" : "",
+                "debug" : true
+            }
+        }
+    ]
+}

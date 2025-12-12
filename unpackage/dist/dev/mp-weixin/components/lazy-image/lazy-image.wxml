@@ -1,0 +1,1 @@
+<view class="lazy-image-container data-v-ba80243c"><image wx:if="{{a}}" src="{{b}}" mode="{{c}}" style="{{d}}" class="lazy-image data-v-ba80243c" bindload="{{e}}" binderror="{{f}}"></image><image wx:else src="{{g}}" mode="{{h}}" style="{{i}}" class="lazy-image data-v-ba80243c"></image></view>
